@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Préstamos Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Préstamos</h1>
+        <p>Ingresá los datos para calcular tu cuota y ver el historial.</p>
+
+        <div class="input-section">
+            <h2>Calculá tu Préstamo</h2>
+            <div class="input-group">
+                <label for="monto">Monto del Préstamo ($):</label>
+                <input type="number" id="monto" min="10000" max="500000" value="50000" step="1000" required>
+            </div>
+            <div class="input-group">
+                <label for="plazo">Plazo en Meses (6-60):</label>
+                <input type="number" id="plazo" min="6" max="60" value="12" step="1" required>
+            </div>
+            <button id="btnCalcular">Calcular Préstamo</button>
+            <button id="btnLimpiarHistorial" class="secondary-btn">Limpiar Historial</button>
+        </div>
+
+        <div class="results-section">
+            <h2>Resultado del Cálculo</h2>
+            <p>Cuota Mensual Estimada: <span id="cuotaMensual">$0.00</span></p>
+            <p>Monto Total a Devolver: <span id="montoTotalDevolver">$0.00</span></p>
+        </div>
+
+        <div class="history-section">
+            <h2>Historial de Cálculos</h2>
+            <div id="historialLista" class="history-list">
+                <p class="no-history-msg">Aún no hay cálculos en el historial.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

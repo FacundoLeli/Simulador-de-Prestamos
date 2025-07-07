@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea al inicio verticalmente */
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1, h2 {
+    color: #0056b3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.input-section, .results-section, .history-section {
+    background-color: #e9f7ff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #cceeff;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #004085;
+}
+
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #a8d7ff;
+    border-radius: 4px;
+    box-sizing: border-box; /* Para incluir el padding en el width */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%; /* Para que ocupe todo el ancho */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.secondary-btn {
+    background-color: #6c757d; /* Gris para el botón de limpiar */
+    margin-top: 10px; /* Separación del botón principal */
+}
+
+.secondary-btn:hover {
+    background-color: #5a6268;
+}
+
+
+.results-section p {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #004085;
+    text-align: left; /* Alinea los resultados a la izquierda */
+    margin-bottom: 10px;
+}
+
+.results-section span {
+    color: #007bff;
+    font-size: 1.2em;
+    float: right; /* Alinea el valor a la derecha */
+}
+
+.history-list {
+    background-color: #ffffff;
+    border: 1px solid #a8d7ff;
+    border-radius: 4px;
+    padding: 10px;
+    max-height: 250px; /* Límite de altura para el historial */
+    overflow-y: auto; /* Scroll si el contenido es largo */
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.history-item:last-child {
+    border-bottom: none; /* Elimina el borde del último elemento */
+}
+
+.history-item strong {
+    color: #0056b3;
+}
+
+.no-history-msg {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
